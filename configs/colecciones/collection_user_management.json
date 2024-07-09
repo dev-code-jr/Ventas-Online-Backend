@@ -1,0 +1,148 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user_management",
+    "dateExported": "2024-03-05T21:51:00.869Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "84537ca4-1ad5-4a82-aef9-292327b1cde9",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "get users",
+            "url": "http://localhost:3000/sales/v2/user/addClient",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T07:42:15.954Z",
+            "modified": "2024-03-05T07:42:15.954Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"amalia\",\n  \"mail\": \"amalia123123@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "620b6c1c-267a-42b1-b6e0-72ea69d0bc01",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "post client",
+            "url": "http://localhost:3000/sales/v2/user/addClient",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-05T07:42:15.956Z",
+            "modified": "2024-03-05T16:59:50.504Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2Y2I5NmEzOGExMjFhMzE3ZThmODIiLCJpYXQiOjE3MDk2NTc5MjAsImV4cCI6MTcwOTY4NjcyMH0.TH2vHm6lOt-vhM71Loixlg3BFtbQNpWF6xyhz1Xsxkg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"maica\",\n  \"mail\": \"maica123123@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "51b82de2-1bfb-43b2-b2cc-6e83705f48f4",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "put passClientToAdmin",
+            "url": "http://localhost:3000/sales/v2/user/updateAdmin/65e75910610ad6ad43426c74",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-05T07:42:15.958Z",
+            "modified": "2024-03-05T17:41:03.468Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2Y2I5NmEzOGExMjFhMzE3ZThmODIiLCJpYXQiOjE3MDk2NTc5MjAsImV4cCI6MTcwOTY4NjcyMH0.TH2vHm6lOt-vhM71Loixlg3BFtbQNpWF6xyhz1Xsxkg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"role\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "16a830a3-ef8c-4469-a63b-949c778bc3f4",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "put passAdminToClient",
+            "url": "http://localhost:3000/sales/v2/user/updateClient/65e6cca41cf7d37595c595dd",
+            "method": "PUT",
+            "sortNum": 55000,
+            "created": "2024-03-05T17:46:46.550Z",
+            "modified": "2024-03-05T18:43:23.885Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2Y2I5NmEzOGExMjFhMzE3ZThmODIiLCJpYXQiOjE3MDk2NTc5MjAsImV4cCI6MTcwOTY4NjcyMH0.TH2vHm6lOt-vhM71Loixlg3BFtbQNpWF6xyhz1Xsxkg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"role\": \"CLIENT\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "fafaa2b6-e69b-4984-aef0-f4817eb3ba2d",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "put updateClient",
+            "url": "http://localhost:3000/sales/v2/user/updateClient/65e6cca41cf7d37595c595dd",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-05T07:42:15.960Z",
+            "modified": "2024-03-05T21:22:56.476Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2Y2I5NmEzOGExMjFhMzE3ZThmODIiLCJpYXQiOjE3MDk2NTc5MjAsImV4cCI6MTcwOTY4NjcyMH0.TH2vHm6lOt-vhM71Loixlg3BFtbQNpWF6xyhz1Xsxkg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Juan pablo\",\n  \"mail\": \"jpablo@gmail.com\",\n  \"password\": 789456\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "94ad1770-2f00-42ca-986a-da144c790a4a",
+            "colId": "686e72d7-b3b7-47ac-bd2e-2201fa240fa5",
+            "containerId": "",
+            "name": "delete removedClient",
+            "url": "http://localhost:3000/sales/v2/user/delClient/65e6cca41cf7d37595c595dd",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-05T07:42:15.962Z",
+            "modified": "2024-03-05T21:47:39.151Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2Y2I5NmEzOGExMjFhMzE3ZThmODIiLCJpYXQiOjE3MDk2NTc5MjAsImV4cCI6MTcwOTY4NjcyMH0.TH2vHm6lOt-vhM71Loixlg3BFtbQNpWF6xyhz1Xsxkg"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}
